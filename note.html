@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Waffer is an application to discuss about animals -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="helpers.css" />
+    <link rel="stylesheet" href="styleNote.css" />
+    <title>Waffer</title>
+</head>
+
+<body>
+
+    <header class="header"><a class="logo" href="note.html"><img src=" img/logo.png" alt="logowaf" width="30"
+                height="30">
+            <h1 class="h1">Waffer</h1>
+        </a>
+        <div class="main-search">
+
+            <select class="select-search" name="pets" id="pet-select">
+                <option value="">Category</option>
+                <option value="dog">Dog</option>
+                <option value="cat">Cat</option>
+                <option value="hamster">Hamster</option>
+                <option value="parrot">Parrot</option>
+                <option value="spider">Spider</option>
+                <option value="goldfish">Fish</option>
+            </select><input type="search" class="search" id="search">
+        </div>
+    </header>
+    <main class="main main-grid">
+        <aside class="main-links-aside grid-left">
+            <!-- //position fixed -->
+            <nav class="nav">
+                <ul>
+                    <li><a href="#">
+                            <p class="text-nav">Home</p>
+                        </a></li>
+                    <li><a href="#">
+                            <p class="text-nav">Notification</p>
+                        </a></li>
+                    <li><a href="#">
+                            <p class="text-nav">Messages</p>
+                        </a></li>
+                    <li><a href="#">
+                            <p class="text-nav">Account</p>
+                        </a></li>
+                    <li><a href="#">
+                            <p class="text-nav">Prenium</p>
+                        </a></li>
+                </ul>
+            </nav>
+            <input type="button" class="btn btn-primary" value="Waf it !" id="btn-waf">
+            <figure class="dogSuperLike">
+                <img src="img/dog_color.png" alt="dog super like" class="img-dog-super">
+                <div class="number-of-superLikes" id="number-of-superLikes">
+                    <span id="nb-super"></span>
+                </div>
+            </figure>
+        </aside>
+
+        <form class="main-form grid-center-row-1" method="post" name="note_form" id="note-form" role="form">
+            <ul class="main-most-like-waf" id="main-most-like-waf"></ul>
+            <fieldset class="inputs">
+                <legend class="labels legend-form">Your new Waf</legend>
+                <div class="title-note">
+                    <label class="labels" for="title-note">Your pseudo</label>
+                    <input type="text" maxlength="200" name="notetitle" id="edit-title" class=" input"
+                        placeholder="note title" />
+                </div>
+                <div class="main-note">
+                    <label class="labels" for="title-note">Your Waf</label>
+                    <textarea type="text" maxlength="450" name="notecontent" class="form-control input " id="edit-input"
+                        placeholder="note text" rows="5"></textarea>
+                </div>
+            </fieldset>
+            <div class="drop-zone" draggable="false">
+                delete your waf here
+            </div>
+            <input type="submit" class="btn btn-primary" value="add your waf" id="btn-save-note">
+        </form>
+
+        <div class="grid-center-row-2 container-notes" id="main-wafs">
+            <ul class="main-notes" id="main-notes">
+            </ul>
+            <div class="btn-more-flex">
+                <button id="btn-more-waf" class="btn-primary btn">more</button>
+            </div>
+        </div>
+
+        <aside class="grid-right main-explore-aside">
+            <!-- // position sticky -->
+            <h1>Popular Waf</h1>
+            <ul>
+                <li><a class="node-trendings" href="#"></a></li>
+                <!-- //faire un after avec trois petits points pour plus de détails -->
+                <li><a class="node-trendings" href="#"></a></li>
+                <!-- //faire un after avec trois petits points pour plus de détails -->
+                <li><a class="node-trendings" href="#"></a></li>
+                <!-- //faire un after avec trois petits points pour plus de détails -->
+                <li><a class="node-trendings" href="#"></a></li>
+                <!-- //faire un after avec trois petits points pour plus de détails -->
+                <li><a class="node-trendings" href="#"></a></li>
+                <!-- //faire un after avec trois petits points pour plus de détails -->
+                <li><a class="node-trendings" href="#"></a></li>
+                <!-- //faire un after avec trois petits points pour plus de détails -->
+            </ul>
+            <h1>Popular Influencers</h1>
+            <ul>
+                <li><a class="node-influencer" href="#"></a></li>
+                <!-- / class="node-influencer"/faire un after avec trois petits points pour plus de détails -->
+                <li><a class="node-influencer" href="#"></a></li>
+                <!-- / class="node-influencer"/faire un after avec trois petits points pour plus de détails -->
+                <li><a class="node-influencer" href="#"></a></li>
+                <!-- / class="node-influencer"/faire un after avec trois petits points pour plus de détails -->
+                <li><a class="node-influencer" href="#"></a></li>
+                <!-- / class="node-influencer"/faire un after avec trois petits points pour plus de détails -->
+                <li><a class="node-influencer" href="#"></a></li>
+                <!-- / class="node-influencer"/faire un after avec trois petits points pour plus de détails -->
+                <li><a class="node-influencer" href="#"></a></li>
+                <!-- //faire un after avec trois petits points pour plus de détails -->
+            </ul>
+            <footer class="main-footer-aside">
+                <ul>
+                    <li> <a href="#">Conditions d'utilisation</a></li>
+                    <li> <a href="#">Politique de Confidentialité</a></li>
+                    <li> <a href="#">Politique relative aux cookies</a></li>
+                    <li> <a href="#">A propos</a></li>
+                    <li> <a href="#">Votre compte</a></li>
+                    <li class="waffer-span">
+                        © 2023 Waffer, Inc.
+                    </li>
+                </ul>
+            </footer>
+        </aside>
+    </main>
+
+    <section class="popup" id="popup-confirm">
+        <h2 class="h2" style="text-align:center;">What do you want to waf ?</h2>
+        <form id="form-popup">
+            <div class="title-note">
+                <label class="labels" for="title-note">Your pseudo</label>
+                <input type="text" maxlength="200" name="notetitle" id="edit-title-popup" class=" input"
+                    placeholder="note title" />
+            </div>
+            <div class="main-note">
+                <label class="labels" for="title-note">Your Waf</label>
+                <textarea type="text" maxlength="450" name="notecontent" class="form-control input "
+                    id="edit-input-popup" placeholder="note text" rows="5"></textarea>
+            </div>
+            <div class="btn-group">
+                <button type="submit" class="btn btn-secondary">Waf it !</button>
+                <button type="button" class="btn btn-secondary" id="cancel-button-popup">Cancel</button>
+            </div>
+        </form>
+    </section>
+    <section class="canva-comments" id="canva-comments">
+
+    </section>
+
+    <script src="note.js"></script>
+    <script src="noteAPI.js"></script>
+</body>
+
+</html>
