@@ -21,8 +21,10 @@ let mostLikeWaf = document.createElement("li");
 const nodesInfluencers = document.getElementsByClassName('node-influencer');
 const nodesTrendings = document.getElementsByClassName('node-trendings');
 const canvaComments = document.getElementById('canva-comments');
+const inputSearch = document.getElementById('search');
 let mainComments = document.createElement('ul');
 mainComments.className = "main-comments";
+console.log(inputSearch);
 
 
 
@@ -364,7 +366,7 @@ function addNote(title, text, date, id, likes, commentsCount) {
     defineDate(date);
     commentWaf()
     modifyNote()
-    sendWaf(title, text)
+    // sendWaf(title, text)
 }
 
 // Global functions on page
